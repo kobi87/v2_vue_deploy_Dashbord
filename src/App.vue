@@ -3,8 +3,8 @@
    >
     <v-app-bar app color="teal lighten-2" dark>
       <v-icon left>mdi-view-dashboard</v-icon>
-      <router-link to="/Dashboard"><v-btn text rounded>Dashboard</v-btn></router-link>
-      <router-link to="/"><v-btn text rounded>AI</v-btn></router-link> 
+      <router-link class="routerLink" to="/Dashboard" ><v-btn text rounded>Dashboard</v-btn></router-link>
+      <router-link class="routerLink" to="/"><v-btn class = "fontsize" text rounded>AI</v-btn></router-link> 
       <v-spacer></v-spacer>
       <v-toolbar-title> <img src="./assets/white-labs-plain.png" height="50" />   </v-toolbar-title>
     </v-app-bar>
@@ -28,6 +28,7 @@
 <script>
 
 export default {
+  
   name: 'App',
 
   components: {
@@ -52,4 +53,11 @@ export default {
     background-size: cover;
     position: relative;
   }
+  .routerLink{
+     text-decoration: none;
+     font-size: 2.2em;
+  }  
+  .fontsize {
+    font-size: 1.2em;
+  }   
 </style>
