@@ -4,7 +4,7 @@
 pip install -r requirements.txt
 
 # run the server
-python app.py
+python api.py
 
 # install dependencies
 npm install
